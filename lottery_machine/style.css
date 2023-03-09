@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.text {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.lotto-container {
+  display: flex;
+  position: fixed;
+  top: 120px;
+  left: 50px;
+}
+
+.lotto-container div {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #57B04A;
+  border-radius: 100%;
+}
+
+.lotto-container div:nth-child(even) {
+  background-color: red;
+}
+
+.lotto-container div:nth-child(3n) {
+  background-color: orange;
+}
+
+.lotto-container div:last-child {
+  background-color: tan;
+}
+
+.lotto-container p {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lotto-container div p {margin-left: 0.2px;}
+
+/* 뽑기기계 */
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
